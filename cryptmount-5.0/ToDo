@@ -1,0 +1,12 @@
+* remove support for legacy /dev/loop/0 device nodes
+* add legacy loop-aes support
+* migrate unit-testing suite to CUnit
+* investigate libcap as alternative to setuid
+* add option for ingesting key-material via command-line
+* run tests on 64-bit big-endian machines (e.g. sparc64)
+* allow module-directory to be searchable
+* extend tests on --safetynet option
+* integrate with SELinux
+* add 'verbose' option?
+* key-cache for multiple operations?
+* multiple devices in cmtab?

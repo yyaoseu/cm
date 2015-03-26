@@ -1,0 +1,9 @@
+etc/cryptmount
+etc/init.d
+etc/modules-load.d
+usr/bin
+usr/lib/systemd/system
+usr/sbin
+usr/share/man
+usr/share/doc/cryptmount/examples
+usr/share/lintian/overrides
