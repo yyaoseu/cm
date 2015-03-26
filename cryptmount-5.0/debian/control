@@ -1,0 +1,34 @@
+Source: cryptmount
+Section: admin
+Priority: extra
+Maintainer: RW Penney <rwpenney@users.sourceforge.net>
+Homepage: http://cryptmount.sourceforge.net
+Build-Depends: debhelper (>= 9.0.0), dpkg-dev (>=1.16.1), autotools-dev,
+            libcryptsetup-dev (>= 1.4), libdevmapper-dev,
+            libgcrypt11-dev (>= 1.1), pkg-config, uuid-dev
+Standards-Version: 3.9.5
+
+Package: cryptmount
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Recommends: udev
+Suggests: openssl, dmsetup
+Description: Management of encrypted file systems
+ cryptmount is a utility for creating encrypted filesystems & swap partitions
+ and which allows an ordinary user to mount/unmount filesystems
+ without requiring superuser privileges.
+ .
+ It offers the following features:
+    * easy and safe on-demand access to filesystems without su/sudo;
+    * access passwords can be changed easily without involving the sys-admin;
+    * filesystems can reside on raw disk partitions or ordinary files;
+    * supports LUKS encrypted filesystems created by cryptsetup;
+    * encrypted access keys can be stored on removable media
+      (e.g. USB flash disks);
+    * includes support for encrypted swap partitions;
+    * multiple filesystems can be stored in a single disk partition;
+    * encrypted filesystems can be initialized at boot-up or on demand;
+    * temporary filesystems can be setup via command-line,
+      for use in shell-scripts;
+    * transparent configuration of dm-crypt & loopback devices during mounting;
+    * access keys can optionally be made compatible with OpenSSL.
